@@ -1,0 +1,348 @@
+/*home coding*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(73, 16, 7, 1) 100%, rgba(0, 11, 13, 1) 100%);
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.img-home-pic, .img-about-pic{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.img-box {
+
+    margin-top: 100px;
+}
+
+.text-box {
+
+    margin-top: 150px;
+}
+
+.text-box p {
+    font-size: 15px;
+}
+
+.text-box span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .4px #dc3545;
+    font-size: 20px;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+.text-box span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #dc3545;
+    color: #dc3545;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fil-text 4s linear infinite;
+}
+
+@keyframes fil-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+
+.btn-box button {
+    border-radius: 35px;
+
+}
+
+.btn-box button:hover {
+
+    box-shadow: 0px 0px 10px #dc3545;
+    width: 130px;
+    height: 40px;
+}
+
+
+
+.btn-box i:hover {
+
+    filter: drop-shadow(0px 0px 10px #dc3545);
+
+}
+
+/*home coding*/
+
+/*about coding*/
+
+.about div {
+    margin-top: 200px;
+}
+
+.about-text-box {
+    font-size: 15px;
+}
+
+.about-box{
+    background-color: rgba(24, 22, 22, 0.418);
+    
+}
+
+.extra h4{
+    font-size: 18px;
+}
+
+.extra h5{
+    font-size: 15px;
+}
+
+.about-btn-box button{
+    border-radius: 35px;
+}
+
+.about-btn-box button:hover{
+    filter: drop-shadow(0px 0px 5px #dc3545);
+    width: 90px ;
+    height: 40px;
+}
+
+
+
+.about-main-text-box{
+    margin-top:100px;
+}
+
+.about-img-box{
+    margin-top:100px;
+}
+
+
+.skill-text div{
+    margin-top:200px;
+}
+
+.two-main{
+  background-color: rgba(0, 0, 0, 0.4);
+  
+    
+    
+}
+
+.sill-main-box{
+    margin-top:100px;
+}
+
+
+
+.ser-text{
+    margin-top:200px;
+    margin-bottom: 100px;
+}
+
+.ser_box{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.ser_box p{
+    font-size: 18px;
+    
+}
+
+.ser-btn{
+    justify-content: flex-end;
+}
+
+.ser-btn button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(22, 134, 168);
+}
+
+
+#my_modal1 .modal-content{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+#my_modal1 .modal-content {
+    border: none;
+    box-shadow: none;
+}
+
+
+#my_modal1 .modal-header, 
+#my_modal1 .modal-footer {
+    border: none;
+}
+
+#my_modal2 .modal-content{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+#my_modal2 .modal-content {
+    border: none;
+    box-shadow: none;
+}
+
+
+#my_modal2 .modal-header, 
+#my_modal2 .modal-footer {
+    border: none;
+}
+
+
+#my_modal3 .modal-content{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+#my_modal3 .modal-content {
+    border: none;
+    box-shadow: none;
+}
+
+
+#my_modal3 .modal-header, 
+#my_modal3 .modal-footer {
+    border: none;
+}
+
+
+.contact-box{
+    margin-top:200px;
+}
+
+.contact-frm-box {
+    background-color: rgb(0, 0, 0);
+    border-radius: 35px;
+    margin-top:100px;
+}
+
+.contact-frm-box .form-control{
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-radius: 35px;
+    outline: none;
+    color: white !important;
+}
+
+.contact-frm-box textarea{
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-radius: 35px;
+    outline: none !important;
+    
+}
+
+.contact-frm-box .input{
+    padding:10px;
+   
+}
+
+.contact-frm-box button{
+    border-radius: 35px;
+}
+
+.contact-frm-box{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    width:350px;
+    height: 350px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-frm-box::after, .contact-frm-box::before{
+    --angle:0deg;
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(from var(--angle), transparent 50%, red);
+    width:100%;
+    height:100%;
+    animation: 3s spin linear infinite;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 35px;
+    padding: 178px !important;
+}
+
+.contact-frm-box::before{
+    filter:blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+}
+
+.contact-frm-box button:hover{
+    width:140px;
+    height:40px;
+    filter: drop-shadow(0px 0px 5px #dc3545);
+}
+
+
+footer{
+    height:190px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.happy{
+    font-size: 12px;
+    text-align: center;
+}
+
+i{
+    cursor: pointer;
+}
+
+#footer-a{
+    text-decoration: none;
+}
