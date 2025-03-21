@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location.href="https://github.com/avijit8cp";
     });
 
-
-   
-
 //facebook
 
 var facebook = document.getElementById("facebook").addEventListener("click", function(){
