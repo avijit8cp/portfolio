@@ -1,4 +1,5 @@
-//github
+document.addEventListener("DOMContentLoaded", function(){
+    //github
     var github = document.getElementById("github").addEventListener("click", function(){
         window.location.href="https://github.com/avijit8cp";
     });
@@ -26,6 +27,9 @@ var insta = document.getElementById("insta").addEventListener("click", function(
 var footer_pro = document.getElementById("footer-pro").addEventListener("click", function(){
     window.location.href="https://github.com/avijit8cp?tab=repositories";
 });
+
+});
+
 
 
 
