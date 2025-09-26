@@ -20,7 +20,8 @@ body {
     filter: invert(1);
 }
 
-.img-home-pic, .img-about-pic{
+.img-home-pic,
+.img-about-pic {
     width: 320px;
     height: 320px;
     border-radius: 50%;
@@ -115,76 +116,76 @@ body {
     font-size: 15px;
 }
 
-.about-box{
+.about-box {
     background-color: rgba(24, 22, 22, 0.418);
-    
+
 }
 
-.extra h4{
+.extra h4 {
     font-size: 18px;
 }
 
-.extra h5{
+.extra h5 {
     font-size: 15px;
 }
 
-.about-btn-box button{
+.about-btn-box button {
     border-radius: 35px;
 }
 
-.about-btn-box button:hover{
+.about-btn-box button:hover {
     filter: drop-shadow(0px 0px 5px #dc3545);
-    width: 90px ;
+    width: 90px;
     height: 40px;
 }
 
 
 
-.about-main-text-box{
-    margin-top:100px;
+.about-main-text-box {
+    margin-top: 100px;
 }
 
-.about-img-box{
-    margin-top:100px;
-}
-
-
-.skill-text div{
-    margin-top:200px;
-}
-
-.two-main{
-  background-color: rgba(0, 0, 0, 0.4);
-  
-    
-    
-}
-
-.sill-main-box{
-    margin-top:100px;
+.about-img-box {
+    margin-top: 100px;
 }
 
 
+.skill-text div {
+    margin-top: 200px;
+}
 
-.ser-text{
-    margin-top:200px;
+.two-main {
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+
+}
+
+.sill-main-box {
+    margin-top: 100px;
+}
+
+
+
+.ser-text {
+    margin-top: 200px;
     margin-bottom: 100px;
 }
 
-.ser_box{
+.ser_box {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.ser_box p{
+.ser_box p {
     font-size: 18px;
-    
+
 }
 
-.ser-btn{
+.ser-btn {
     justify-content: flex-end;
 }
 
-.ser-btn button{
+.ser-btn button {
     border: none;
     outline: none;
     background-color: transparent;
@@ -192,9 +193,9 @@ body {
 }
 
 
-#my_modal1 .modal-content{
+#my_modal1 .modal-content {
     background-color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 #my_modal1 .modal-content {
@@ -203,14 +204,14 @@ body {
 }
 
 
-#my_modal1 .modal-header, 
+#my_modal1 .modal-header,
 #my_modal1 .modal-footer {
     border: none;
 }
 
-#my_modal2 .modal-content{
+#my_modal2 .modal-content {
     background-color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 #my_modal2 .modal-content {
@@ -219,15 +220,15 @@ body {
 }
 
 
-#my_modal2 .modal-header, 
+#my_modal2 .modal-header,
 #my_modal2 .modal-footer {
     border: none;
 }
 
 
-#my_modal3 .modal-content{
+#my_modal3 .modal-content {
     background-color: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 #my_modal3 .modal-content {
@@ -236,23 +237,23 @@ body {
 }
 
 
-#my_modal3 .modal-header, 
+#my_modal3 .modal-header,
 #my_modal3 .modal-footer {
     border: none;
 }
 
 
-.contact-box{
-    margin-top:200px;
+.contact-box {
+    margin-top: 200px;
 }
 
 .contact-frm-box {
     background-color: rgb(0, 0, 0);
     border-radius: 35px;
-    margin-top:100px;
+    margin-top: 100px;
 }
 
-.contact-frm-box .form-control{
+.contact-frm-box .form-control {
     box-shadow: none !important;
     background-color: transparent !important;
     border-radius: 35px;
@@ -260,106 +261,142 @@ body {
     color: white !important;
 }
 
-.contact-frm-box textarea{
+.contact-frm-box textarea {
     box-shadow: none !important;
     background-color: transparent !important;
     border-radius: 35px;
     outline: none !important;
-    
+
 }
 
-.contact-frm-box .input{
-    padding:10px;
-   
+.contact-frm-box .input {
+    padding: 10px;
+
 }
 
-.contact-frm-box button{
+.contact-frm-box button {
     border-radius: 35px;
 }
 
-.contact-frm-box{
+.contact-frm-box {
     justify-content: center;
     align-items: center;
     display: flex;
     position: relative;
-    width:350px;
+    width: 350px;
     height: 350px;
 }
 
-@property --angle{
+@property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.contact-frm-box::after, .contact-frm-box::before{
-    --angle:0deg;
+.contact-frm-box::after,
+.contact-frm-box::before {
+    --angle: 0deg;
     content: "";
     position: absolute;
     background-image: conic-gradient(from var(--angle), transparent 50%, red);
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     animation: 3s spin linear infinite;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     translate: -50% -50%;
     z-index: -1;
     border-radius: 35px;
     padding: 178px !important;
 }
 
-.contact-frm-box::before{
-    filter:blur(1.5rem);
+.contact-frm-box::before {
+    filter: blur(1.5rem);
     opacity: 0.5;
 }
 
-@keyframes spin{
-    from{
-        --angle:0deg;
+@keyframes spin {
+    from {
+        --angle: 0deg;
     }
-    to{
-        --angle:360deg;
+
+    to {
+        --angle: 360deg;
     }
 }
 
-.contact-frm-box button:hover{
-    width:140px;
-    height:40px;
+.contact-frm-box button:hover {
+    width: 140px;
+    height: 40px;
     filter: drop-shadow(0px 0px 5px #dc3545);
 }
 
 
-footer{
-    height:190px;
-    width:100%;
+footer {
+    height: 190px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.happy{
+.happy {
     font-size: 12px;
     text-align: center;
 }
 
-i{
+i {
     cursor: pointer;
 }
 
-#footer-a{
+#footer-a {
     text-decoration: none;
 }
 
 
- #foot_insta:hover{
+#foot_insta:hover {
     filter: drop-shadow(0px 0px 10px #dc3545);
 }
 
-#foot_github:hover{
-    filter: drop-shadow(0px 0px 10px #dc3545);
-}
-#foot_facebook:hover{
+#foot_github:hover {
     filter: drop-shadow(0px 0px 10px #dc3545);
 }
 
-#footer_project{
+#foot_facebook:hover {
+    filter: drop-shadow(0px 0px 10px #dc3545);
+}
+
+#footer_project {
     text-decoration: none;
+}
+
+#work1 {
+    width: 180px;
+}
+
+#work_link {
+    text-decoration: none;
+}
+
+.work_box {
+    border: 1px solid #222021;
+}
+
+@media (max-width:768px) {
+    .work_box {
+        flex-direction: column;
+    }
+
+    #work_video {
+        width: 300px !important;
+        height:300px !important;
+    }
+
+}
+
+#work_video {
+    width: 465px;
+    height:500px;
+}
+
+.work_row{
+    margin-bottom: 50px;
 }
